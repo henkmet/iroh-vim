@@ -448,3 +448,56 @@ hi! link vimContinue IrohBrush1
 
 
 " }}}
+" Tex: {{{
+syntax match TexCommand   "\\\{1,2}"
+syntax match TexCommand   "\\[a-zA-Z]\+"         contains=@NoSpell
+syntax match TexAnd       "&"
+syntax match TexBeginEnd  "\\\(begin\|end\)"
+syntax match TexItem      "\\item"
+syntax match TexSubTag    "\\tag"
+syntax match TexSubLabRef "\\\(label\|ref\|pageref\)" contains=@NoSpell
+syntax match TexSubLR     "\\\(left\|right\|big\|Big\|middle\)"
+syntax match TexSubFoot   "\\footnote"
+" syntax match TexSubSect   "\\\(sub\)*section"
+syntax match TexCommand   "\\footnote[a-zA-Z]\+" contains=@NoSpell
+syntax match TexCommand   "\\\(bigcup\|bigcap\)" contains=@NoSpell
+syntax match TexCommand   "\\\(rightarrow\|leftarrow\)" contains=@NoSpell
+syntax match TexComment   "%.*$"                 contains=@NoSpell
+syntax match TexTodo      "%%.*"
+syntax match TexIgnore    "\\\(%\|{\|}\|\$\|#\|&\|!\|\^\|,\|;\)"
+syntax region TexMaths     matchgroup=TexDollar   start="\$" end="\$"
+	\ contains=@NoSpell,TexCommand,TexIgnore,TexSubLR
+
+ syntax match TIKZA "\s\(node\|coordinate\|rectangle\|grid\|circle\|pic\|arc\|to\|plot\)"
+ syntax match TIKZA "\s\(--\||-\|-|\|\.\.\)"
+ syntax match TIKZB "\s\(child\|at\|controls\)"
+ syntax match TIKZB "intersection"
+ syntax match TIKZB "\((\$\|\$)\)"
+ syntax match TIKZC "label"
+ syntax match TIKZC "\s\(let\|in\)"
+ syntax match TIKZC "!"
+
+ syntax match BeamerFrame "frame"
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+highlight def link TexCommand   IrohCobalt0
+highlight def link TexComment   Comment
+highlight def link TexDollar    IrohMetal0
+highlight def link TexAnd       IrohClay0
+highlight def link TexBeginEnd  IrohCopper0
+highlight def link TexItem      IrohGold0
+highlight def link TexSubTag    IrohGold0
+highlight def link TexSubFoot   IrohClay0
+highlight def link TexSubLabRef IrohClay0
+" highlight def link TexSubSect   IrohCobalt0
+highlight          TexSubLR     ctermfg=DarkGray guifg=DarkGray
+highlight def link TexTodo      Todo
+highlight def link TexIgnore    IrohGold0
+
+ highlight def link TIKZA         IrohClay0
+ highlight def link TIKZB         IrohGold0
+ highlight def link TIKZC         IrohCobalt1
+
+ highlight def link BeamerFrame   IrohCobalt1
+ " }}}
