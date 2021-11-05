@@ -1,6 +1,7 @@
 " vim:ft=vim foldmethod=marker
 " === Iroh Colorscheme ===
 " By UnikMask <visorunik@gmail.com>
+" Changed by Henk Metselaar <h.metselaar@um.edu.my>
 " https://github.com/iroh-vim
 " Last Modified: recently
 " === === === === === === ===
@@ -12,33 +13,33 @@ let g:colors_name='iroh'
 " }}}
 " Palette: {{{
 
-" Set palette dictionnary
+" Set palette dictionary
 let s:ro = {}
 
-" Fill dictionnary with colors
-let s:ro.bg 	=  ['#2e2b2a', 236]
-let s:ro.fg 	=  ['#e9d49c', 187]
-let s:ro.dcurs  =  ['#e9d49c', 187]
+" Fill dictionary with colors
+let s:ro.bg 	=  ['#1c1d1f', 236]
+let s:ro.fg 	=  ['#5c4c36', 187]
+let s:ro.dcurs  =  ['#5c4c36', 187]
 
 " Colors
-let s:ro.ico2  =  ['#899470', 101]
-let s:ro.ico10 =  ['#9eb185', 144]
+let s:ro.ico2  =  ['#989b52', 101]
+let s:ro.ico10 =  ['#313722', 144]
 let s:ro.ico13 =  ['#e3630a', 166]
 let s:ro.ico5  =  ['#ff771d', 208]
-let s:ro.ico6  =  ['#d38007', 172]
+let s:ro.ico6  =  ['#5c7a63', 172]
 let s:ro.ico14 =  ['#faac09', 214]
 let s:ro.ico18 =  ['#ffb032', 215]
 let s:ro.ico0  =  ['#c22211', 124]
 let s:ro.ico3  =  ['#ca2c18', 160]
 let s:ro.ico11 =  ['#d33b24', 166]
-let s:ro.ico17 =  ['#999999', 246]
+let s:ro.ico17 =  ['#cca45f', 246]
 let s:ro.ico7  =  ['#d6caab', 187]
 let s:ro.ico15 =  ['#f6efdd', 255]
-let s:ro.ico1  =  ['#403735', 237]
+let s:ro.ico1  =  ['#2a3c36', 237]
 let s:ro.ico9  =  ['#7d5650', 95]
 let s:ro.ico16 =  ['#8f5e51', 95]
 let s:ro.ico8  =  ['#c2604c', 131]
-let s:ro.ico4  =  ['#627400', 64]
+let s:ro.ico4  =  ['#987851', 64]
 let s:ro.ico12 =  ['#90c523', 112]
 
 " }}}
@@ -185,7 +186,7 @@ call s:Highlight('Normal', s:fg, s:bg)
 set background=dark
 
 " Set cursor line and cursor column with defaults
-call s:Highlight('CursorLine', s:bg, s:clay0)
+call s:Highlight('CursorLine', s:bg, s:clay1)
 hi! link CursorColumn CursorLine
 
 " Tab page line filler, label, and inactive label
@@ -205,7 +206,7 @@ call s:Highlight('Conceal', s:clay2, s:bg)
 " Line number of the cursor line
 call s:Highlight('CursorLineNr', s:mony2, s:clay0)
 
-" Link non-text and special key to more clay2's light redish grey color.
+" Link non-text and special key to more clay2's light reddish grey color.
 hi! link NonText IrohClay2
 hi! link SpecialKey IrohClay2
 " Visual mode highlighting
