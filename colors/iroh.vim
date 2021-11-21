@@ -9,7 +9,8 @@
 
 " Init spc settings: {{{"
 let g:colors_name='iroh'
-
+let s:vmode       = "gui"
+set termguicolors
 " }}}
 " Palette: {{{
 
