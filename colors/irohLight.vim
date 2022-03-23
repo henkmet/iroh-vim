@@ -8,39 +8,40 @@
 
 " Init spc settings: {{{"
 
-let g:colors_name='iroh-light'
-
+let g:colors_name='irohLight'
+let s:vmode = "gui"
+set termguicolors
 " }}}
 " Palette: {{{
 
-" Set palette dictionnary
+" Set palette dictionary
 let s:ro = {}
 
-" Fill dictionnary with colors
-let s:ro.bg 	=  ['#e9d49c', 187]
-let s:ro.fg 	=  ['#7e504a', 95]
-let s:ro.dcurs  =  ['#7e504a', 95]
+" Fill dictionary with colors
+let s:ro.bg 	=  ['#adadbd', 187]
+let s:ro.fg 	=  ['#000088', 95]
+let s:ro.dcurs  =  ['#000088', 95]
 
 " Colors
-let s:ro.ico2  =  ['#708894', 66]
-let s:ro.ico10 =  ['#85aeb1', 109]
-let s:ro.ico5  =  ['#e3630a', 166]
-let s:ro.ico13 =  ['#ff771d', 208]
+let s:ro.ico2  =  ['#2f2922', 66]
+let s:ro.ico10 =  ['#2f2922', 109]
+let s:ro.ico5  =  ['#81898c', 166]
+let s:ro.ico13 =  ['#cbccc2', 208]
 let s:ro.ico18 =  ['#d38007', 172]
-let s:ro.ico14 =  ['#faac09', 214]
-let s:ro.ico6  =  ['#ffb032', 215]
-let s:ro.ico11 =  ['#c22211', 124]
-let s:ro.ico3  =  ['#ca2c18', 160]
-let s:ro.ico0  =  ['#d33b24', 166]
+let s:ro.ico14 =  ['#006ddf', 214]
+let s:ro.ico6  =  ['#006ddf', 215]
+let s:ro.ico11 =  ['#cbccc2', 124]
+let s:ro.ico3  =  ['#997a3d', 160]
+let s:ro.ico0  =  ['#000088', 166]
 let s:ro.ico17 =  ['#888888', 246]
-let s:ro.ico7  =  ['#816459', 95]
-let s:ro.ico15 =  ['#6b504a', 95]
-let s:ro.ico1  =  ['#c6caab', 187]
-let s:ro.ico9  =  ['#c7b78e', 180]
-let s:ro.ico16 =  ['#bfa76a', 143]
-let s:ro.ico8  =  ['#b59952', 137]
-let s:ro.ico12 =  ['#006174', 24]
-let s:ro.ico4  =  ['#0077a5', 32]
+let s:ro.ico7  =  ['#e8ece6', 95]
+let s:ro.ico15 =  ['#74747f', 95]
+let s:ro.ico1  =  ['#6c4d3a', 187]
+let s:ro.ico9  =  ['#6c4d3a', 180]
+let s:ro.ico16 =  ['#a57c4f', 143]
+let s:ro.ico8  =  ['#74786f', 137]
+let s:ro.ico12 =  ['#5083cc', 24]
+let s:ro.ico4  =  ['#0031db', 32]
 
 " }}}
 " Set-Up: {{{
