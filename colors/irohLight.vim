@@ -18,7 +18,7 @@ set termguicolors
 let s:ro = {}
 
 " Fill dictionary with colors
-let s:ro.bg 	=  ['#adadbd', 187]
+let s:ro.bg 	=  ['#99adbd', 187]
 let s:ro.fg 	=  ['#000088', 95]
 let s:ro.dcurs  =  ['#000088', 95]
 
