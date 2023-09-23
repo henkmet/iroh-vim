@@ -268,6 +268,7 @@ s:silv0	autoload/airline/themes/irohLight.vim	/^let s:silv0 = ['#888888', 246]$/
 s:silv0	colors/iroh.vim	/^let s:silv0 = s:ro.ico17$/;"	v
 s:silv0	colors/irohLight.vim	/^let s:silv0 = s:ro.ico17$/;"	v
 s:strikethrough	colors/iroh.vim	/^let s:strikethrough = 'strikethrough,'$/;"	v
+s:telescope_highlight	colors/iroh.vim	/^let s:telescope_highlight = s:clay1$/;"	v
 s:undercurl	colors/iroh.vim	/^let s:undercurl = 'undercurl,'$/;"	v
 s:undercurl	colors/irohLight.vim	/^let s:undercurl = 'undercurl,'$/;"	v
 s:underline	colors/iroh.vim	/^let s:underline = 'underline,'$/;"	v

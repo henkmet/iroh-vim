@@ -532,14 +532,14 @@ hi! link NeogitFold Folded
 " }}}
 " LSP: {{{
 " Java config
-hi! link @lsp.type.class.java Type
-hi! link @lsp.type.typeParameter.java Type
-hi! link @lsp.type.struct.java Type
-hi! link @lsp.type.interface.java Type
-hi! link @lsp.type.keyword.java Keyword
-hi! link @lsp.type.enum.java Type
-hi! link @lsp.type.modifier.java Keyword
-hi! link @lsp.type.namespace IrohAntimony0
+"hi! link @lsp.type.class.java Type
+"hi! link @lsp.type.typeParameter.java Type
+"hi! link @lsp.type.struct.java Type
+"hi! link @lsp.type.interface.java Type
+"hi! link @lsp.type.keyword.java Keyword
+"hi! link @lsp.type.enum.java Type
+"hi! link @lsp.type.modifier.java Keyword
+"hi! link @lsp.type.namespace IrohAntimony0
 
 " }}}
 " Notify : {{{
