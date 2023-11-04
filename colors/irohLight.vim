@@ -11,7 +11,6 @@
 let g:colors_name='irohLight'
 let s:vmode = "gui"
 set termguicolors
-" }}}
 " Palette: {{{
 
 " Set palette dictionary
@@ -279,6 +278,7 @@ call s:Highlight('Special', s:mony1, s:bg, s:italic)
 call s:Highlight('Comment', s:clay2, s:bg)
 call s:Highlight('Todo', s:clay3, s:bg, s:bold)
 call s:Highlight('Error', s:iron2, s:clay2, s:inverse)
+call s:Highlight('SpellBad', s:iron2, s:clay2, s:inverse)
 
 " === === General statements an structure === ===
 " Loops
